@@ -1,0 +1,126 @@
+---
+---
+
+$brand-color-primary: #00ff8b;
+$header: $brand-color-primary;
+
+@import '{{ site.theme }}';
+
+// hr {
+//   color: $brand-color-primary;
+// }
+
+body {
+  background: #212121;
+  text-transform: uppercase;
+}
+
+header {
+  border-bottom: 1px dashed $brand-color-primary;
+}
+
+header h1 {
+  color: $brand-color-primary;
+}
+
+#main_content {
+  z-index: 1;
+}
+
+// markdown code block
+.highlight {
+  // string
+  .gi {
+    color: $brand-color-primary;
+  }
+  .s,
+  .sb,
+  .sc,
+  .sd,
+  .s2,
+  .sh,
+  .sx,
+  .s1 {
+    color: $brand-color-primary;
+  }
+  .ss {
+    color: $brand-color-primary;
+  }
+  // literal
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo,
+  .mb,
+  .mx {
+    color: $brand-color-primary;
+  }
+}
+
+// based on terminalBg.scss from platform/packages/app
+
+$total: 144;
+$time: 10;
+$height: 400;
+$dotSize: 0.9;
+$background-color: #212121;
+$color: #195945;
+
+.terminal-bg {
+  overflow: hidden;
+
+  .terminal-line {
+    position: relative;
+    height: $height + px;
+    width: 100%;
+    margin-top: -$height + px;
+    background-image: linear-gradient(
+      to bottom,
+      $background-color,
+      $color + CC
+    );
+    z-index: -1;
+    // animation: drop $time+s infinite steps(200);
+    animation: drop $time + s infinite linear;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0;
+      border-radius: 50%;
+      left: 50%;
+    }
+  }
+
+  &::after {
+    pointer-events: none;
+    z-index: 30;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.1),
+      rgba(black, 0.1) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+}
+
+@keyframes drop {
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 150vh, 0);
+    opacity: 0;
+  }
+}
