@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+# 0x_nodes
 
-You can use the [editor on GitHub](https://github.com/0xNODES/community/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+protocol for cross-chain liquidity strategies
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## protocol information
 
-### Markdown
+### core concepts
+- Kernel
+- BIOS (mainnet token)
+- PFA (staking assets)
+- BIOS rewards
+- ETH rewards
+- Integration
+- Strategy
+- native chain
+- remote chain
+- interconnects
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## functionality
 
-```markdown
-Syntax highlighted code block
+`kernel.deposit`
 
-# Header 1
-## Header 2
-### Header 3
+`kernel.withdraw`
 
-- Bulleted
-- List
+`userPositions.enterStrategy`
 
-1. Numbered
-2. List
+`userPositions.existStrategy`
 
-**Bold** and _Italic_ and `Code` text
+`kernel.claimEthRewards`
 
-[Link](url) and ![Image](src)
-```
+`kernel.claimBiosRewards`
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+`strategyMap` ...
 
-### Jekyll Themes
+### Deprecated:
+`kernel.claimAllRewards`
+`kernel.withdrawAllAndClaim`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/0xNODES/community/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## interconnects
 
-### Support or Contact
+0x_nodes interconnect allows deploying assets on one chain and operating them, with yield, on another. This is different than bridging, where assets are permanently moved to the another chain. Interconnects do not move assets across chain. Assets are matched with a liquidity provider on the remote chain. When the rmeote chain releases the assets, they are unlocked on the native chain.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## cross-chain strategies
+
+0x_nodes crosschain strategies are the practice of 
+
+## community strategies
+
+0x_nodes platform is open sourced and ready for community users to publish new strategies. Our governance framework allows nomination and voting of new protocol integrations and strategy availability. 
+
+## how to use system11
+
+0x_nodes system11 is the dapp provided to allow users a GUI for using the protocol. All of the methods listed in "functionality" are present in the dapp.
