@@ -76,11 +76,7 @@ $color: #195945;
     height: $height + px;
     width: 100%;
     margin-top: -$height + px;
-    background-image: linear-gradient(
-      to bottom,
-      $background-color,
-      $color + CC
-    );
+    background-image: linear-gradient(to bottom, $background-color, $color + CC);
     z-index: -1;
     // animation: drop $time+s infinite steps(200);
     animation: drop $time + s infinite linear;
