@@ -5,6 +5,8 @@ Please report any issues, defects, or feature requests related to the dapp or we
 
 <a href="https://github.com/0xNODES/community/issues">community/issues</a>
 
+Please put your telegram ID in the ticket so we can reach out to you directly.
+
 Actionable and favorable issues will be considered for a community award, minimum amount 11 BIOS.
 
 ## Bugs or Exploits
