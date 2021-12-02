@@ -1,6 +1,6 @@
 # Welcome to the 0x_nodes community issues and bounties program.
 
-## Issues, Feature Requests
+## Issues, Feature Requests, Documentation contributions
 Please report any issues, defects, or feature requests related to the dapp or websites here: 
 
 <a href="https://github.com/0xNODES/community/issues">community/issues</a>
